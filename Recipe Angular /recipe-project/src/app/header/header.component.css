@@ -1,0 +1,15 @@
+.navbar-brand{
+    font-family: 'Niconne', cursive;
+    font-size: 3rem;
+    color: black;
+}
+
+.navbar-toggler-icon{
+    color: black;
+    border-color: black;
+}
+
+.nav-link{
+    font-family: 'Niconne', cursive;
+}
+

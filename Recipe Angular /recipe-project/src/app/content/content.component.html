@@ -1,0 +1,67 @@
+<h1> "A new innovative way for recipes to be passed down from generation to generation"</h1>
+
+
+<div class="contianer">
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <button type="button" class="btn btn-primary btn-lg" id="button" data-toggle="modal" data-target="#myModal">Add
+        New Recipe</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">New recipe test</h4>
+      </div>
+      <div class="modal-body">
+        
+          <div class="row">
+            <div class="col mb-5">
+              <input type="text" [(ngModel)]="recipeName" name='jjj' class="form-control" placeholder="Recipe Name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-5">
+              <input type="text" [(ngModel)]= "description"  class="form-control" placeholder="Description">
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]= "ingredients" class="form-control" placeholder="Ingredients">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-5">
+              <input type="text" [(ngModel)]= "cookTime" class="form-control" placeholder="Cook Time">
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]= "directions" class="form-control" placeholder="Directions">
+            </div>
+          </div>
+         <div class="modal-footer">
+          <button type="button" (click)= onSave class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <h2> "My Recipes"</h2>
+
+  <div class="card" *ngFor= 'let recipe of receipes'>
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.recipeName}}</h5>
+        <p class="card-text">{{recipe.description}}</p>
+       <ul class="card-text">{{recipe.ingredients}}</ul>
+       <p class="card-text">{{recipe.cookTime</p>
+        <ul class="card-text>">{{recipe.directions}}</ul>
+      </div>
+      <img src="..." class="card-img-top" alt="...">
+    </div>

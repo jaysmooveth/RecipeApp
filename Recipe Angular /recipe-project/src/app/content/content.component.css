@@ -1,0 +1,39 @@
+video{
+    width: 100vw;
+    height: 75vh;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+h1{
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    color: black;
+  margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+button{
+    width: 150px;
+  text-align: center;
+  margin:0 auto;
+  margin-bottom: 5%;
+  font-family: 'Niconne', cursive;
+}
+
+
+h4{
+    font-family: 'Niconne', cursive;
+}
+
+.form-control{
+    font-family: 'Niconne', cursive;
+}
+
+h2{
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    color: black;
+    margin-bottom: 5%;
+}
